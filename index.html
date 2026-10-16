@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore atores e atrizes e encontre seus nomes favoritos.">
+  <title>Cine elenco | Atores e atrizes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dados.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">✦</span> cine<span>elenco</span></a><span class="topbar-note">QUEM FAZ A HISTÓRIA</span></header>
+  <main>
+    <section class="intro" aria-labelledby="titulo">
+      <p class="eyebrow">DOS CRÉDITOS PARA O SEU RADAR</p>
+      <h1 id="titulo">Atores &amp; <span>atrizes.</span></h1>
+      <p class="description">Os rostos por trás das suas histórias favoritas.<br>Explore o elenco e encontre quem você procura.</p>
+      <label for="busca">Busque pelo nome</label>
+      <div class="search-box"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="text" id="busca" placeholder="Ex.: Tom, Emilia, Zendaya..." oninput="filtrarAtores()" autocomplete="off"><kbd aria-hidden="true">BUSCAR</kbd></div>
+    </section>
+    <section class="catalog" aria-label="Catálogo de atores e atrizes">
+      <div class="catalog-heading"><h2>Explore o elenco</h2><p id="contador" role="status" aria-live="polite"></p></div>
+      <div id="lista-atores" class="grid"></div>
+      <div id="sem-resultados" class="empty" hidden><span aria-hidden="true">✦</span><h2>Nenhum nome por aqui.</h2><p>Tente outro nome ou apague a busca para ver todo o elenco.</p></div>
+    </section>
+  </main>
+  <footer><span class="brand">cine<span>elenco</span></span><p>Um catálogo para quem ama boas histórias.</p><small>Dados e fotos: TVmaze · CheckPoint 2</small></footer>
+</body>
+</html>
